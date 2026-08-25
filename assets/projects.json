@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "repo": "dsa_maxing",
+      "description": "Java repository focused on data structures and algorithms.",
+      "language": "Java"
+    },
+    {
+      "repo": "PGlife-master",
+      "description": "Web development project built with PHP.",
+      "language": "PHP"
+    }
+  ]
+}
