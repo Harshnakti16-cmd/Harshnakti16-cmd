@@ -28,7 +28,7 @@ jobs:
 
       # Hand-authored skill radar (edit assets/skills.json to change it)
       - name: Skill radar
-        run: python scripts/radar.py --data assets/skills.json -o assets/radar
+        run: python scripts/radar.py --data assets/skills.json -o assets/radar --size 320
 
       # Live radar built from real language byte counts across your repos
       - name: Language radar
