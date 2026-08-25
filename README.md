@@ -49,24 +49,17 @@ algorithms, and continuously improving my development skills.
 
 <img alt="GitHub contribution calendar" src="assets/metrics.isocalendar.svg">
 
-### Coding Habits
-
-<img alt="Coding habits" src="assets/metrics.habits.svg">
 
 ### Languages
 
 <img alt="Most used languages" src="assets/metrics.languages.svg">
-
-### Achievements
-
-<img alt="GitHub achievements" src="assets/metrics.achievements.svg">
 
 ---
 
 ## 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/dist/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/dist/snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/dist/snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/snake.svg">
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/snake.svg">
 </picture>
