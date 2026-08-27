@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-animated_header.py - generate dark/light terminal typing SVG animations for GitHub README.
-Uses pure SVG + CSS @keyframes + clipPath so it passes GitHub's SVG sanitizer cleanly.
+animated_header.py - generate dark/light terminal typing header SVG animations for GitHub README.
+Uses inner <svg> width animation with steps() for authentic letter-by-letter typing effect without clipPath.
 """
 
 from pathlib import Path
@@ -17,16 +17,12 @@ DARK_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" widt
       <stop offset="50%" stop-color="#26a641"/>
       <stop offset="100%" stop-color="#00f2fe"/>
     </linearGradient>
-    <clipPath id="type-clip">
-      <rect class="mask-rect" x="0" y="-25" width="0" height="45"/>
-    </clipPath>
   </defs>
 
   <style>
     .prompt { fill: #39d353; font-weight: bold; font-size: 15px; }
     .user { fill: #58a6ff; font-weight: bold; font-size: 15px; }
     .text-title { fill: #e6edf3; font-weight: 600; font-size: 22px; }
-    .type-text { fill: url(#accent-grad); font-size: 17px; font-weight: 700; }
 
     @keyframes cursor-blink {
       0%, 49% { opacity: 1; }
@@ -34,22 +30,22 @@ DARK_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" widt
     }
     .cursor { fill: #39d353; animation: cursor-blink 0.8s infinite; }
 
-    @keyframes typing-mask {
+    @keyframes typing-effect {
       0%, 10% { width: 0px; }
-      45%, 75% { width: 620px; }
-      90%, 100% { width: 0px; }
+      45%, 75% { width: 560px; }
+      95%, 100% { width: 0px; }
     }
-    .mask-rect {
-      animation: typing-mask 7s steps(40, end) infinite;
+    .type-box {
+      animation: typing-effect 7s steps(40, end) infinite;
     }
 
-    @keyframes move-cursor {
+    @keyframes cursor-move {
       0%, 10% { transform: translateX(0px); }
-      45%, 75% { transform: translateX(620px); }
-      90%, 100% { transform: translateX(0px); }
+      45%, 75% { transform: translateX(560px); }
+      95%, 100% { transform: translateX(0px); }
     }
     .cursor-wrap {
-      animation: move-cursor 7s steps(40, end) infinite;
+      animation: cursor-move 7s steps(40, end) infinite;
     }
   </style>
 
@@ -73,12 +69,10 @@ DARK_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" widt
   <g transform="translate(25, 102)">
     <text class="prompt" x="0" y="0">></text>
 
-    <!-- Typing Text with Clip Path -->
-    <g transform="translate(20, 0)">
-      <g clip-path="url(#type-clip)">
-        <text class="type-text" x="0" y="0">Building software • Solving problems with Java, Python, React &amp; Flutter</text>
-      </g>
-    </g>
+    <!-- Inner SVG animating width for character-by-character typing -->
+    <svg x="20" y="-18" width="0" height="30" class="type-box">
+      <text fill="url(#accent-grad)" font-size="16" font-weight="700" x="0" y="18">Building software • Java, Python, React &amp; Flutter</text>
+    </svg>
 
     <!-- Moving Cursor -->
     <g class="cursor-wrap" transform="translate(20, 0)">
@@ -99,16 +93,12 @@ LIGHT_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" wid
       <stop offset="50%" stop-color="#116329"/>
       <stop offset="100%" stop-color="#0969da"/>
     </linearGradient>
-    <clipPath id="type-clip-light">
-      <rect class="mask-rect-light" x="0" y="-25" width="0" height="45"/>
-    </clipPath>
   </defs>
 
   <style>
     .prompt { fill: #1a7f37; font-weight: bold; font-size: 15px; }
     .user { fill: #0969da; font-weight: bold; font-size: 15px; }
     .text-title { fill: #1f2328; font-weight: 600; font-size: 22px; }
-    .type-text { fill: url(#accent-grad-light); font-size: 17px; font-weight: 700; }
 
     @keyframes cursor-blink {
       0%, 49% { opacity: 1; }
@@ -116,22 +106,22 @@ LIGHT_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" wid
     }
     .cursor { fill: #1a7f37; animation: cursor-blink 0.8s infinite; }
 
-    @keyframes typing-mask {
+    @keyframes typing-effect {
       0%, 10% { width: 0px; }
-      45%, 75% { width: 620px; }
-      90%, 100% { width: 0px; }
+      45%, 75% { width: 560px; }
+      95%, 100% { width: 0px; }
     }
-    .mask-rect-light {
-      animation: typing-mask 7s steps(40, end) infinite;
+    .type-box {
+      animation: typing-effect 7s steps(40, end) infinite;
     }
 
-    @keyframes move-cursor {
+    @keyframes cursor-move {
       0%, 10% { transform: translateX(0px); }
-      45%, 75% { transform: translateX(620px); }
-      90%, 100% { transform: translateX(0px); }
+      45%, 75% { transform: translateX(560px); }
+      95%, 100% { transform: translateX(0px); }
     }
     .cursor-wrap {
-      animation: move-cursor 7s steps(40, end) infinite;
+      animation: cursor-move 7s steps(40, end) infinite;
     }
   </style>
 
@@ -155,12 +145,10 @@ LIGHT_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" wid
   <g transform="translate(25, 102)">
     <text class="prompt" x="0" y="0">></text>
 
-    <!-- Typing Text with Clip Path -->
-    <g transform="translate(20, 0)">
-      <g clip-path="url(#type-clip-light)">
-        <text class="type-text" x="0" y="0">Building software • Solving problems with Java, Python, React &amp; Flutter</text>
-      </g>
-    </g>
+    <!-- Inner SVG animating width for character-by-character typing -->
+    <svg x="20" y="-18" width="0" height="30" class="type-box">
+      <text fill="url(#accent-grad-light)" font-size="16" font-weight="700" x="0" y="18">Building software • Java, Python, React &amp; Flutter</text>
+    </svg>
 
     <!-- Moving Cursor -->
     <g class="cursor-wrap" transform="translate(20, 0)">
@@ -173,9 +161,9 @@ LIGHT_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 140" wid
 def main():
     out_dir = Path("assets")
     out_dir.mkdir(exist_ok=True)
-    (out_dir / "header-typing-dark.svg").write_text(DARK_SVG, encoding="utf-8")
-    (out_dir / "header-typing-light.svg").write_text(LIGHT_SVG, encoding="utf-8")
-    print("Generated header-typing-dark.svg and header-typing-light.svg")
+    (out_dir / "card-header-dark.svg").write_text(DARK_SVG, encoding="utf-8")
+    (out_dir / "card-header-light.svg").write_text(LIGHT_SVG, encoding="utf-8")
+    print("Generated card-header-dark.svg and card-header-light.svg with character typing animation")
 
 if __name__ == "__main__":
     main()

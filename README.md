@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-typing-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/header-typing-light.svg">
-  <img alt="Terminal Header" src="assets/header-typing-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-header-light.svg">
+  <img alt="Terminal Header" src="assets/card-header-dark.svg" width="100%">
 </picture>
 
 <br>

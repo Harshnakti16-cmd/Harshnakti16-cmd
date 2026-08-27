@@ -15,7 +15,6 @@
     .prompt { fill: #39d353; font-weight: bold; font-size: 15px; }
     .user { fill: #58a6ff; font-weight: bold; font-size: 15px; }
     .text-title { fill: #e6edf3; font-weight: 600; font-size: 22px; }
-    .type-text { fill: url(#accent-grad); font-size: 17px; font-weight: 700; }
 
     @keyframes cursor-blink {
       0%, 49% { opacity: 1; }
@@ -23,13 +22,22 @@
     }
     .cursor { fill: #39d353; animation: cursor-blink 0.8s infinite; }
 
-    @keyframes text-fade {
-      0%, 5% { opacity: 0; transform: translateY(4px); }
-      15%, 85% { opacity: 1; transform: translateY(0px); }
-      95%, 100% { opacity: 0; transform: translateY(-4px); }
+    @keyframes typing-effect {
+      0%, 10% { width: 0px; }
+      45%, 75% { width: 560px; }
+      95%, 100% { width: 0px; }
     }
-    .animated-group {
-      animation: text-fade 6s ease-in-out infinite;
+    .type-box {
+      animation: typing-effect 7s steps(40, end) infinite;
+    }
+
+    @keyframes cursor-move {
+      0%, 10% { transform: translateX(0px); }
+      45%, 75% { transform: translateX(560px); }
+      95%, 100% { transform: translateX(0px); }
+    }
+    .cursor-wrap {
+      animation: cursor-move 7s steps(40, end) infinite;
     }
   </style>
 
@@ -52,9 +60,15 @@
 
   <g transform="translate(25, 102)">
     <text class="prompt" x="0" y="0">></text>
-    <g class="animated-group" transform="translate(20, 0)">
-      <text class="type-text" x="0" y="0">Building software • Solving problems with Java, Python, React &amp; Flutter</text>
+
+    <!-- Inner SVG animating width for character-by-character typing -->
+    <svg x="20" y="-18" width="0" height="30" class="type-box">
+      <text fill="url(#accent-grad)" font-size="16" font-weight="700" x="0" y="18">Building software • Java, Python, React &amp; Flutter</text>
+    </svg>
+
+    <!-- Moving Cursor -->
+    <g class="cursor-wrap" transform="translate(20, 0)">
+      <rect class="cursor" x="0" y="-16" width="9" height="20"/>
     </g>
-    <rect class="cursor" x="695" y="-16" width="9" height="20"/>
   </g>
 </svg>
