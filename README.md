@@ -14,7 +14,6 @@ algorithms, and continuously improving my development skills.
   <img alt="Skill Radar" src="assets/radar-light.svg">
 </picture>
 
----
 
 ## 📊 GitHub Stats
 
@@ -24,7 +23,6 @@ algorithms, and continuously improving my development skills.
   <img alt="GitHub Stats" src="assets/card-stats-light.svg">
 </picture>
 
----
 
 ## 🚀 Featured Projects
 
@@ -40,7 +38,6 @@ algorithms, and continuously improving my development skills.
   <img alt="PGlife-master" src="assets/card-PGlife-master-light.svg">
 </picture>
 
----
 
 ## 📈 GitHub Activity
 
@@ -53,7 +50,6 @@ algorithms, and continuously improving my development skills.
 
 <img alt="Most used languages" src="assets/metrics.languages.svg">
 
----
 
 ## 🐍 Contribution Snake
 
