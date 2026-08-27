@@ -5,7 +5,6 @@
 I enjoy building software, solving problems with data structures and
 algorithms, and continuously improving my development skills.
 
----
 
 ## 🧠 Skills
 
