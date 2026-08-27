@@ -1,12 +1,20 @@
-# Hi, I'm Harsh 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-typing-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/header-typing-light.svg">
+  <img alt="Terminal Header" src="assets/header-typing-dark.svg" width="100%">
+</picture>
 
-**Software Developer | Java • Python • React • Flutter**
+<br>
 
-I enjoy building software, solving problems with data structures and
-algorithms, and continuously improving my development skills.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/marquee-tech-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/marquee-tech-light.svg">
+  <img alt="Tech Stack Ticker" src="assets/marquee-tech-dark.svg" width="100%">
+</picture>
 
+<br>
 
-<table border="0">
+<table border="0" width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
       <h3 align="left">🧠 Skills</h3>
@@ -27,10 +35,9 @@ algorithms, and continuously improving my development skills.
   </tr>
 </table>
 
-
 ## 🚀 Featured Projects
 
-<table border="0">
+<table border="0" width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
       <picture>
@@ -49,10 +56,9 @@ algorithms, and continuously improving my development skills.
   </tr>
 </table>
 
-
 ## 📈 GitHub Activity
 
-<table border="0">
+<table border="0" width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
       <h3 align="left">Contribution Calendar</h3>
@@ -64,7 +70,6 @@ algorithms, and continuously improving my development skills.
     </td>
   </tr>
 </table>
-
 
 ## 🐍 Contribution Snake
 
