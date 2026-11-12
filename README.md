@@ -1,3 +1,29 @@
+<table border="0" width="100%">
+  <tr>
+    <td width="270" align="center" valign="middle">
+      <img src="assets/portrait-card.svg" width="240" alt="Harsh - Full Stack Software Developer">
+    </td>
+    <td valign="middle">
+      <h3>Hey, I'm Harsh! 👋</h3>
+      <p><strong>Full Stack Software Developer</strong><br>
+      Building applications, backend systems and exploring new technologies.</p>
+      <p>
+        <strong>Technology stack:</strong><br>
+        <code>Python</code> · <code>FastAPI</code> · <code>Flask</code> · <code>React</code> · <code>Flutter</code> · <code>PostgreSQL</code> · <code>Java</code> · <code>Firebase</code>
+      </p>
+      <p><strong>Location:</strong> Navi Mumbai, India.</p>
+      <p>
+        <a href="https://github.com/Harshnakti16-cmd"><img src="assets/badge-github.svg" alt="GitHub"></a>
+        &nbsp;
+        <!-- Replace with your LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/"><img src="assets/badge-linkedin.svg" alt="LinkedIn"></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/card-header-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-header-light.svg">
