@@ -28,7 +28,9 @@ jobs:
             dist/snake.gif?color_snake=#58a6ff&color_dots=#161b22,#0e4429,#006d32,#26a641,#39ff88
 
       - name: Apply Neon Cyber-Circuit styling
-        run: python3 scripts/cyber_snake.py dist/snake-dark.svg dist/snake.svg
+        run: |
+          sudo chown -R "$(id -u):$(id -g)" dist
+          python3 scripts/cyber_snake.py dist/snake-dark.svg dist/snake.svg
 
       # The SVGs are pushed to an orphan `output` branch so they never clutter
       # main. The README points at raw.githubusercontent.com/.../output/...
