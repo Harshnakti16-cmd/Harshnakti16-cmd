@@ -22,41 +22,52 @@
   </tr>
 </table>
 
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/card-header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/card-header-light.svg">
-  <img alt="Terminal Header" src="assets/card-header-dark.svg" width="100%">
-</picture>
-
-<br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/marquee-tech-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/marquee-tech-light.svg">
-  <img alt="Tech Stack Ticker" src="assets/marquee-tech-dark.svg" width="100%">
-</picture>
-
-<br>
+## ⚡ Technology Stack
 
 <table border="0" width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
-      <h3 align="left">🧠 Skills</h3>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
-        <img alt="Skill Radar" src="assets/radar-light.svg" width="100%">
-      </picture>
+      <img alt="Backend Stack" src="assets/stack-backend.svg" width="100%">
     </td>
     <td width="50%" align="center" valign="top">
-      <h3 align="left">📊 GitHub Stats</h3>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
-        <img alt="GitHub Stats" src="assets/card-stats-light.svg" width="100%">
-      </picture>
+      <img alt="Frontend Stack" src="assets/stack-frontend.svg" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img alt="Mobile Stack" src="assets/stack-mobile.svg" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img alt="Database Stack" src="assets/stack-database.svg" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img alt="Integrations Stack" src="assets/stack-integrations.svg" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img alt="Tools Stack" src="assets/stack-tools.svg" width="100%">
+    </td>
+  </tr>
+</table>
+
+## 🧩 Engineering Focus
+
+<table border="0" width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img alt="Application Development" src="assets/focus-app-dev.svg" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img alt="API Engineering" src="assets/focus-api.svg" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img alt="Database Engineering" src="assets/focus-database.svg" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img alt="Problem Solving" src="assets/focus-problem-solving.svg" width="100%">
     </td>
   </tr>
 </table>
@@ -82,20 +93,32 @@
   </tr>
 </table>
 
-## 📈 GitHub Activity
+## 📊 GitHub Dashboard
+
+<p align="center">
+  <img alt="GitHub Profile Summary and Activity Graph" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Harshnakti16-cmd&theme=github_dark" width="100%">
+</p>
 
 <table border="0" width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
-      <h3 align="left">Contribution Calendar</h3>
-      <img alt="GitHub contribution calendar" src="assets/metrics.isocalendar.svg" width="100%">
+    <td width="50%" align="center" valign="middle">
+      <img alt="Most Used Languages" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Harshnakti16-cmd&layout=compact&bg_color=161B22&title_color=58A6FF&text_color=F0F6FC&border_color=30363D" width="100%">
     </td>
-    <td width="50%" align="center" valign="top">
-      <h3 align="left">Languages</h3>
-      <img alt="Most used languages" src="assets/metrics.languages.svg" width="100%">
+    <td width="50%" align="center" valign="middle">
+      <img alt="GitHub Commit Activity by Time" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Harshnakti16-cmd&theme=github_dark&utcOffset=5.5" width="100%">
     </td>
   </tr>
 </table>
+
+## 🔭 Currently Exploring
+
+<p align="center">
+  <img alt="Currently Exploring Status" src="assets/exploring-status.svg" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Currently Exploring Topics" src="assets/exploring-topics.svg" width="100%">
+</p>
 
 ## 🐍 Contribution Snake
 
@@ -104,3 +127,18 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/snake.svg">
   <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/Harshnakti16-cmd/Harshnakti16-cmd/output/snake.svg" width="100%">
 </picture>
+
+---
+
+<p align="center">
+  <a href="https://github.com/Harshnakti16-cmd"><img src="assets/badge-github.svg" alt="GitHub"></a>
+  &nbsp;
+  <!-- Replace with your LinkedIn profile URL -->
+  <a href="https://www.linkedin.com/"><img src="assets/badge-linkedin.svg" alt="LinkedIn"></a>
+  &nbsp;
+  <a href="mailto:harshnakti0@gmail.com"><img src="assets/badge-email.svg" alt="Email"></a>
+</p>
+
+<p align="center">
+  <em>Building. Learning. Shipping.</em>
+</p>

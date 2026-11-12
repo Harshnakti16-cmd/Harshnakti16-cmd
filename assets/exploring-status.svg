@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 54" width="850" height="54" role="img" aria-label="Currently exploring status" font-family='ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif'>
+  <style>
+    @keyframes status-pulse {
+      0%, 100% { opacity: 0.45; transform: scale(1); }
+      50% { opacity: 0.08; transform: scale(1.5); }
+    }
+    .pulse-ring {
+      transform-origin: 26px 27px;
+      animation: status-pulse 4s ease-in-out infinite;
+    }
+    @keyframes phrase-cycle {
+      0% { opacity: 0; }
+      5%, 28% { opacity: 1; }
+      33.3%, 100% { opacity: 0; }
+    }
+    .p1 { opacity: 0; animation: phrase-cycle 15s ease-in-out infinite; animation-delay: 0s; }
+    .p2 { opacity: 0; animation: phrase-cycle 15s ease-in-out infinite; animation-delay: 5s; }
+    .p3 { opacity: 0; animation: phrase-cycle 15s ease-in-out infinite; animation-delay: 10s; }
+  </style>
+  <rect x="0.75" y="0.75" width="848.5" height="52.5" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1.2"/>
+  <circle class="pulse-ring" cx="26" cy="27" r="6" fill="#3FB950"/>
+  <circle cx="26" cy="27" r="4" fill="#3FB950"/>
+  <text x="42" y="31" font-size="11.5" font-weight="700" fill="#3FB950" letter-spacing="0.8">ACTIVE FOCUS</text>
+  <line x1="154" y1="15" x2="154" y2="39" stroke="#30363D" stroke-width="1"/>
+  <text x="172" y="31.5" font-family='ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace' font-size="13.5" font-weight="700" fill="#58A6FF">&gt;</text>
+  <text class="p1" x="190" y="31.5" font-family='ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace' font-size="13.5" font-weight="600" fill="#F0F6FC">Building backend systems.</text>
+  <text class="p2" x="190" y="31.5" font-family='ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace' font-size="13.5" font-weight="600" fill="#F0F6FC">Exploring system design.</text>
+  <text class="p3" x="190" y="31.5" font-family='ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace' font-size="13.5" font-weight="600" fill="#F0F6FC">Practicing problem solving.</text>
+</svg>
